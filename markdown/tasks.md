@@ -19,13 +19,13 @@
 
 ## 2. Database
 
-- [ ] Buat modul koneksi database SQLite.
-- [ ] Buat inisialisasi tabel `Item`.
-- [ ] Buat inisialisasi tabel `Loan`.
-- [ ] Definisikan primary key dan foreign key.
-- [ ] Aktifkan foreign key SQLite pada setiap koneksi.
-- [ ] Tambahkan constraint dasar untuk stok, quantity, dan status.
-- [ ] Pastikan database dan tabel dapat dibuat tanpa error.
+- [x] Buat modul koneksi database SQLite.
+- [x] Buat inisialisasi tabel `Item`.
+- [x] Buat inisialisasi tabel `Loan`.
+- [x] Definisikan primary key dan foreign key.
+- [x] Aktifkan foreign key SQLite pada setiap koneksi.
+- [x] Tambahkan constraint dasar untuk stok, quantity, dan status.
+- [x] Pastikan database dan tabel dapat dibuat tanpa error.
 
 ## 3. Data Access Layer
 

@@ -19,4 +19,8 @@ def create_app(test_config=None):
 
     os.makedirs(app.instance_path, exist_ok=True)
 
+    from . import database
+
+    database.init_app(app)
+
     return app
