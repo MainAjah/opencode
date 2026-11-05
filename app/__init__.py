@@ -1,6 +1,9 @@
 import os
 
-from flask import Flask
+from flask import Flask, jsonify
+from werkzeug.exceptions import HTTPException
+
+from app.errors import ApiError
 
 
 def create_app(test_config=None):
@@ -22,5 +25,24 @@ def create_app(test_config=None):
     from . import database
 
     database.init_app(app)
+
+    from .routes.item_routes import bp as item_blueprint
+    from .routes.loan_routes import bp as loan_blueprint
+
+    app.register_blueprint(item_blueprint)
+    app.register_blueprint(loan_blueprint)
+
+    @app.errorhandler(ApiError)
+    def handle_api_error(error):
+        return jsonify({"error": error.message}), error.status_code
+
+    @app.errorhandler(HTTPException)
+    def handle_http_error(error):
+        return jsonify({"error": error.description}), error.code
+
+    @app.errorhandler(Exception)
+    def handle_unexpected_error(error):
+        app.logger.exception("Unhandled exception")
+        return jsonify({"error": "Internal server error"}), 500
 
     return app
