@@ -29,18 +29,18 @@
 
 ## 3. Data Access Layer
 
-- [ ] Buat repository untuk entitas `Item`.
-- [ ] Implementasikan penyimpanan item baru.
-- [ ] Implementasikan pengambilan seluruh item.
-- [ ] Implementasikan pengambilan item berdasarkan ID.
-- [ ] Implementasikan pengurangan stok secara bersyarat.
-- [ ] Implementasikan penambahan stok.
-- [ ] Buat repository untuk entitas `Loan`.
-- [ ] Implementasikan pembuatan transaksi pinjaman.
-- [ ] Implementasikan pencarian transaksi berdasarkan ID.
-- [ ] Implementasikan pembaruan status transaksi.
-- [ ] Implementasikan pengambilan riwayat berdasarkan NIM.
-- [ ] Gunakan parameterized query pada seluruh query yang menerima input.
+- [x] Buat repository untuk entitas `Item`.
+- [x] Implementasikan penyimpanan item baru.
+- [x] Implementasikan pengambilan seluruh item.
+- [x] Implementasikan pengambilan item berdasarkan ID.
+- [x] Implementasikan pengurangan stok secara bersyarat.
+- [x] Implementasikan penambahan stok.
+- [x] Buat repository untuk entitas `Loan`.
+- [x] Implementasikan pembuatan transaksi pinjaman.
+- [x] Implementasikan pencarian transaksi berdasarkan ID.
+- [x] Implementasikan pembaruan status transaksi.
+- [x] Implementasikan pengambilan riwayat berdasarkan NIM.
+- [x] Gunakan parameterized query pada seluruh query yang menerima input.
 
 ## 4. Service Layer dan Business Logic
 
